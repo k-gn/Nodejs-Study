@@ -1,8 +1,10 @@
-const value = require('./var');
+// const value = require('./var');
 
-const {odd, even} = require('./var');
+// const {odd, even} = require('./var');
 
-console.log(value);
+// console.log(value);
+
+import {odd, even} from './var';
 
 function check(number) {
 
@@ -17,8 +19,10 @@ const result = check(5);
 console.log(result);
 
 // 파일에서 단 한번만 사용
-module.exports = {
-    check,
-    odd,
-    even
-}
+// module.exports = {
+//     check,
+//     odd,
+//     even
+// }
+
+export default {check, odd, even};
