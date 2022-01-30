@@ -11,3 +11,5 @@ console.timeEnd("zero");
 console.trace("에러 추적");
 
 console.table(obj);
+
+console.log(global);
