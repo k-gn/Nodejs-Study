@@ -18,10 +18,13 @@ if(isMainThread) { // main
     }));
 
     for(let worker of threads) {
+        worker.on('error', (err) => {
+            throw err;
+        });
         worker.postMessage('ping');
         worker.on('message', (value) => {
             console.log(value);
-        })
+        });
         worker.on('exit', () => {
             threads.delete(worker);
             console.log('end');
