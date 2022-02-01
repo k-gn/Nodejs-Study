@@ -42,3 +42,10 @@ console.log(myEvent.listenerCount('event2'));
 process.on('uncaughtException', (err) => {
     console.log('예기치 못한 에러: ', err);
 }); 
+
+
+// netstat -ano | findstr 포트
+// taskkill /pid 프로세스아이디 /f
+
+// lsof -i tcp:포트
+// kill -9 프로세스아이디
