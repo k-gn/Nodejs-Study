@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs').promises;
 
 // 서버 생성
-const server = http.createServer((req, res) => {
+const server = http.createServer(async (req, res) => {
 
     try {
         res.writeHead(200, {'Content-Type': 'text/html; charset=utf-8'});
